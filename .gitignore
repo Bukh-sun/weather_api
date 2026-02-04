@@ -1,0 +1,136 @@
+# created by virtualenv automatically
+.venv/Lib
+# ================================
+# PyCharm IDE файлы
+# ================================
+.idea/
+*.iml
+*.ipr
+*.iws
+modules.xml
+workspace.xml
+vcs.xml
+misc.xml
+dictionaries/
+
+# Плагины PyCharm
+# в папке .idea есть подпапки с настройками плагинов
+.idea/*.xml
+.idea/*.iml
+.idea/codeStyles/
+.idea/copyright/
+.idea/dataSources/
+.idea/dataSources.local.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/jsLibraryMappings.xml
+.idea/libraries/
+.idea/markdown-navigator/
+.idea/markdown-navigator/profiles_settings.xml
+.idea/shelf/
+.idea/sonarlint/
+.idea/tasks.xml
+
+# ================================
+# Python/Django
+# ================================
+# Файлы Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Распределения пакетов
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Установщик pip
+pip-delete-this-directory.txt
+
+# Байт-код
+*.pyc
+*.pyo
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+.venv*/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+*.db
+instance/
+
+# Статические файлы (собираются командой collectstatic)
+/staticfiles/
+/media/
+
+# Логи
+*.log
+django.log
+
+# Файлы окружения
+.env
+.env.local
+.env.*.local
+secrets.py
+secret_key.txt
+
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ================================
+# Тестирование и покрытие кода
+# ================================
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+
+# ================================
+# Jupyter Notebook
+# ================================
+.ipynb_checkpoints
+
+# ================================
+# Другие IDE
+# ================================
+.vscode/
+*.swp
+*.swo
+*~
+.project
+
+# ================================
+# Проект-специфичные файлы
+# ================================
+# config/local_settings.py
+# .env.production
+
+.idea
