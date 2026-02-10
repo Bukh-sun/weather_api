@@ -2,9 +2,9 @@ from django.shortcuts import render
 import requests
 import requests_cache
 import json
+from requests_cache import CachedSession
 
-
-requests_cache.install_cache('weather_cache', expire_after=300, allowable_methods=('GET',))
+weather_session = CachedSession(cache_name='weather_cache', expire_after=300, allowable_methods=('GET',))
 def weather_view(request):
     city = request.GET.get('city', 'Irkutsk')
 
@@ -29,7 +29,7 @@ def weather_view(request):
             'timezone': 'auto'
         }
 
-        response = requests.get(
+        response = weather_session.get(
             'https://api.open-meteo.com/v1/forecast',
             params=params,
             timeout=5

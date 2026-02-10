@@ -134,3 +134,4 @@ htmlcov/
 # .env.production
 
 .idea
+weather_cache.sqlite
